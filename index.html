@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$OGuy</title>
+  <!-- Import Poppins font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Import Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Reset & Fonts */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    /* Gradient Background */
+    body {
+      background: linear-gradient(180deg, #0c0d13 0%, #1c1e26 100%);
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      padding-bottom: 100px;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .image-container img {
+      max-width: 700px;
+      border-radius: 20px;
+      box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.8);
+      margin-bottom: 20px;
+    }
+
+    .image-container h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .image-container p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    .description {
+      margin: 20px 0;
+      font-size: 1.5rem;
+      color: #d1d1d1;
+      max-width: 800px;
+    }
+
+    .send-moon {
+      margin-top: 30px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ff7e5f;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Button Section */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      transition: transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .button.buy {
+      background: #ff7e5f;
+      color: white;
+    }
+
+    .button.charts {
+      background: #57c7d4;
+      color: white;
+    }
+
+    .button.twitter {
+      background: #1da1f2;
+      color: white;
+    }
+
+    .button.telegram {
+      background: #0088cc;
+      color: white;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .button i {
+      font-size: 1.8rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="image-container">
+      <img src="$OGuy.png" alt="Hero Image">
+      <h1>Welcome to $OGuy</h1>
+    </div>
+    <p class="description">$OGuy is the best memecoin on the market. Join the revolution today!</p>
+    <p class="send-moon">Send this to the moon!</p>
+    <div class="button-container">
+      <a href="#" class="button buy">
+        <i class="fas fa-shopping-cart"></i> Buy
+      </a>
+      <a href="#" class="button charts">
+        <i class="fas fa-chart-line"></i> Charts
+      </a>
+      <a href="#" class="button twitter">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://t.me/oguy_sol" class="button telegram">
+        <i class="fab fa-telegram"></i> Telegram
+      </a>
+    </div>
+
+  </header>
+</body>
+</html>
